@@ -1,3 +1,3 @@
 select *
-from db前三名成績
+from db_top3
 where stu_grade >= 70
