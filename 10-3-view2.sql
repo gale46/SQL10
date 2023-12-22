@@ -1,7 +1,7 @@
 use [MyDBMS]
 go
-create view Employee_view
+create view Em_view
 as 
-select A.Em_id,Em_name,Em_dep
+select A.Em_id,A.Em_name,A.Em_dep
 from [dbo].[Employee] as A, [dbo].[Department] as B
-where A.dep = B.dep
+where A.Em_dep = B.dep
